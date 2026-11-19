@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="OpenGitBlame.Core/OpenGitBlame.Core.csproj" />
+  <Project Path="OpenGitBlame.UnitTests/OpenGitBlame.UnitTests.csproj" />
+  <Project Path="OpenGitBlame/OpenGitBlame.csproj">
+    <Deploy />
+  </Project>
+</Solution>

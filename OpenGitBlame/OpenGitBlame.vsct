@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h" />
+  <Extern href="vsshlids.h" />
+
+  <Commands package="guidOpenGitBlamePackage">
+
+    <!-- Extensions > Open Git Blame -->
+    <Menus>
+      <Menu guid="guidOpenGitBlameCmdSet" id="ExtensionsSubMenu" priority="0x0100" type="Menu">
+        <Parent guid="guidSHLMainMenu" id="IDG_VS_MM_TOOLSADDINS" />
+        <Strings>
+          <ButtonText>Open Git Blame</ButtonText>
+        </Strings>
+      </Menu>
+    </Menus>
+
+    <Groups>
+      <Group guid="guidOpenGitBlameCmdSet" id="EnabledGroup" priority="0x0100">
+        <Parent guid="guidOpenGitBlameCmdSet" id="ExtensionsSubMenu" />
+      </Group>
+      <Group guid="guidOpenGitBlameCmdSet" id="CommitGroup" priority="0x0200">
+        <Parent guid="guidOpenGitBlameCmdSet" id="ExtensionsSubMenu" />
+      </Group>
+      <Group guid="guidOpenGitBlameCmdSet" id="SettingsGroup" priority="0x0300">
+        <Parent guid="guidOpenGitBlameCmdSet" id="ExtensionsSubMenu" />
+      </Group>
+      <!-- The editor's right-click menu -->
+      <Group guid="guidOpenGitBlameCmdSet" id="EditorContextGroup" priority="0x0800">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN" />
+      </Group>
+    </Groups>
+
+    <Buttons>
+      <Button guid="guidOpenGitBlameCmdSet" id="EnabledCommand" priority="0x0100" type="Button">
+        <Parent guid="guidOpenGitBlameCmdSet" id="EnabledGroup" />
+        <Strings>
+          <ButtonText>Enabled</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidOpenGitBlameCmdSet" id="OpenCommitCommand" priority="0x0100" type="Button">
+        <Parent guid="guidOpenGitBlameCmdSet" id="CommitGroup" />
+        <Strings>
+          <ButtonText>Open Line Commit in Browser</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidOpenGitBlameCmdSet" id="CopyHashCommand" priority="0x0200" type="Button">
+        <Parent guid="guidOpenGitBlameCmdSet" id="CommitGroup" />
+        <Strings>
+          <ButtonText>Copy Line Commit Hash</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidOpenGitBlameCmdSet" id="OpenSettingsCommand" priority="0x0100" type="Button">
+        <Parent guid="guidOpenGitBlameCmdSet" id="SettingsGroup" />
+        <Strings>
+          <ButtonText>Settings...</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <CommandPlacements>
+    <CommandPlacement guid="guidOpenGitBlameCmdSet" id="OpenCommitCommand" priority="0x0100">
+      <Parent guid="guidOpenGitBlameCmdSet" id="EditorContextGroup" />
+    </CommandPlacement>
+    <CommandPlacement guid="guidOpenGitBlameCmdSet" id="CopyHashCommand" priority="0x0200">
+      <Parent guid="guidOpenGitBlameCmdSet" id="EditorContextGroup" />
+    </CommandPlacement>
+  </CommandPlacements>
+
+  <Symbols>
+    <GuidSymbol name="guidOpenGitBlamePackage" value="{2e6e4f4f-a80a-4234-b678-c8d701dab045}" />
+
+    <GuidSymbol name="guidOpenGitBlameCmdSet" value="{8545fe04-0d13-4a4f-a59e-9742a8a39c43}">
+      <IDSymbol name="ExtensionsSubMenu" value="0x1000" />
+      <IDSymbol name="EnabledGroup" value="0x1100" />
+      <IDSymbol name="CommitGroup" value="0x1200" />
+      <IDSymbol name="SettingsGroup" value="0x1300" />
+      <IDSymbol name="EditorContextGroup" value="0x1400" />
+      <IDSymbol name="EnabledCommand" value="0x0100" />
+      <IDSymbol name="OpenCommitCommand" value="0x0101" />
+      <IDSymbol name="CopyHashCommand" value="0x0102" />
+      <IDSymbol name="OpenSettingsCommand" value="0x0103" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>

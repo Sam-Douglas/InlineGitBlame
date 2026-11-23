@@ -104,7 +104,7 @@ jobs:
           vsix-file: ${{ env.VsixName }}
 
       - name: Publish to Visual Studio Marketplace
-        uses: cezarypiatek/VsixPublisherAction@1.0
+        uses: madskristensen/publish-marketplace@v2
         with:
           extension-file: ${{ env.VsixName }}
           publish-manifest-file: vs-publish.json

@@ -3,8 +3,9 @@
   <Metadata>
     <Identity Id="OpenGitBlame.068cf03f-1641-44c0-ac0a-208dc00fd48f" Version="0.1" Language="en-GB" Publisher="Sam Douglas" />
     <DisplayName>Open Git Blame</DisplayName>
-    <Description>Shows who last changed the current line, and when, at the end of the line, in the style of VS Code's git blame extensions.</Description>
+    <Description>Shows who last changed the current line, and when.</Description>
     <License>Resources\LICENSE.txt</License>
+    <Icon>Resources\Icon.png</Icon>
     <Tags>Git;Blame;Git Blame;Inline Blame;Annotate</Tags>
     <Preview>true</Preview>
   </Metadata>

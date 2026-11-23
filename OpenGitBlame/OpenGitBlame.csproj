@@ -13,6 +13,9 @@
 		<Content Include="..\LICENSE.txt" Link="Resources\LICENSE.txt">
 			<IncludeInVSIX>true</IncludeInVSIX>
 		</Content>
+		<Content Include="..\Resources\Icon.png" Link="Resources\Icon.png">
+			<IncludeInVSIX>true</IncludeInVSIX>
+		</Content>
 	</ItemGroup>
 	<ItemGroup>
 		<VSCTCompile Include="OpenGitBlame.vsct">

@@ -6,12 +6,12 @@
 
   <Commands package="guidOpenGitBlamePackage">
 
-    <!-- Extensions > Open Git Blame -->
+    <!-- Extensions > Inline Git Blame -->
     <Menus>
       <Menu guid="guidOpenGitBlameCmdSet" id="ExtensionsSubMenu" priority="0x0100" type="Menu">
         <Parent guid="guidSHLMainMenu" id="IDG_VS_MM_TOOLSADDINS" />
         <Strings>
-          <ButtonText>Open Git Blame</ButtonText>
+          <ButtonText>Inline Git Blame</ButtonText>
         </Strings>
       </Menu>
     </Menus>

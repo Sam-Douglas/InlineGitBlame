@@ -7,13 +7,13 @@ using System.Runtime.InteropServices;
 namespace OpenGitBlame.Options;
 
 /// <summary>
-/// Tools > Options > Open Git Blame > General.
+/// Tools > Options > Inline Git Blame > General.
 /// </summary>
 [ComVisible(true)]
 [Guid("e202e854-9b14-4df3-9fab-c89655728b88")]
 public class GeneralOptionsPage : DialogPage
 {
-    public const string CategoryName = "Open Git Blame";
+    public const string CategoryName = "Inline Git Blame";
     public const string PageName = "General";
 
     /// <summary>Raised after the user confirms the Options dialog.</summary>

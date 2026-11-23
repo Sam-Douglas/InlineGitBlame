@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="OpenGitBlame.068cf03f-1641-44c0-ac0a-208dc00fd48f" Version="0.1" Language="en-GB" Publisher="Sam Douglas" />
-    <DisplayName>Open Git Blame</DisplayName>
-    <Description>Shows who last changed the current line, and when, at the end of the line, in the style of VS Code's git blame extensions.</Description>
+    <Identity Id="OpenGitBlame.068cf03f-1641-44c0-ac0a-208dc00fd48f" Version="1.0" Language="en-GB" Publisher="Sam Douglas" />
+    <DisplayName>Inline Git Blame</DisplayName>
+    <Description>Free, open source inline git blame. Shows who last changed the current line, and when, at the end of the line.</Description>
+    <MoreInfo>https://github.com/Sam-Douglas/InlineGitBlame</MoreInfo>
     <License>Resources\LICENSE.txt</License>
-    <Tags>Git;Blame;Git Blame;Inline Blame;Annotate</Tags>
-    <Preview>true</Preview>
+    <Icon>Resources\Icon.png</Icon>
+    <Tags>Inline Git Blame;Open Git Blame;Git Blame;Inline Blame;Blame;Git;Annotate;Source Control;Open Source;MIT</Tags>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.14, )">

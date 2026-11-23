@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/vsix-publish",
+  "categories": [ "source control", "coding", "team development" ],
+  "identity": {
+    "internalName": "OpenGitBlame",
+    "tags": [ "inline git blame", "open git blame", "git blame", "inline blame", "blame", "git", "annotate", "source control", "open source", "mit" ]
+  },
+  "assetFiles": [
+    { "pathOnDisk": "Images/InlineGitBlameExample.png", "targetPath": "Images/InlineGitBlameExample.png" }
+  ],
+  "overview": "README.md",
+  "publisher": "samjsddevelopment",
+  "repo": "https://github.com/Sam-Douglas/InlineGitBlame"
+}

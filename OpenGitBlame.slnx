@@ -1,4 +1,9 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="LICENSE.txt" />
+    <File Path="README.md" />
+    <File Path="vs-publish.json" />
+  </Folder>
   <Project Path="OpenGitBlame.Core/OpenGitBlame.Core.csproj" />
   <Project Path="OpenGitBlame.UnitTests/OpenGitBlame.UnitTests.csproj" />
   <Project Path="OpenGitBlame/OpenGitBlame.csproj">

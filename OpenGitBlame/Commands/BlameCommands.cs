@@ -15,7 +15,7 @@ using System.Windows;
 namespace OpenGitBlame.Commands;
 
 /// <summary>
-/// The Extensions > Open Git Blame menu and the editor's right-click commands. The ids match <c>OpenGitBlame.vsct</c>.
+/// The Extensions > Inline Git Blame menu and the editor's right-click commands. The ids match <c>OpenGitBlame.vsct</c>.
 /// </summary>
 internal sealed class BlameCommands(
     AsyncPackage package,
@@ -125,7 +125,7 @@ internal sealed class BlameCommands(
     }
 
     private void ShowMessage(string message) =>
-        VsShellUtilities.ShowMessageBox(package, message, "Open Git Blame", OLEMSGICON.OLEMSGICON_INFO, OLEMSGBUTTON.OLEMSGBUTTON_OK, OLEMSGDEFBUTTON.OLEMSGDEFBUTTON_FIRST);
+        VsShellUtilities.ShowMessageBox(package, message, "Inline Git Blame", OLEMSGICON.OLEMSGICON_INFO, OLEMSGBUTTON.OLEMSGBUTTON_OK, OLEMSGDEFBUTTON.OLEMSGDEFBUTTON_FIRST);
 
     private void Run(Func<Task> action) =>
         package.JoinableTaskFactory.RunAsync(action).FileAndForget("OpenGitBlame/Command");

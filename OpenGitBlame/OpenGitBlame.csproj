@@ -8,6 +8,7 @@
 		<!-- VSIX settings -->
 		<VSSDKBuildToolsAutoSetup>true</VSSDKBuildToolsAutoSetup>
 		<GeneratePkgDefFile>true</GeneratePkgDefFile>
+		<TargetVsixContainerName>InlineGitBlame.vsix</TargetVsixContainerName>
 	</PropertyGroup>
 	<ItemGroup>
 		<Content Include="..\LICENSE.txt" Link="Resources\LICENSE.txt">

@@ -4,9 +4,10 @@
     <Identity Id="OpenGitBlame.068cf03f-1641-44c0-ac0a-208dc00fd48f" Version="1.0" Language="en-GB" Publisher="Sam Douglas" />
     <DisplayName>Inline Git Blame</DisplayName>
     <Description>Free, open source inline git blame. Shows who last changed the current line, and when, at the end of the line.</Description>
+    <MoreInfo>https://github.com/Sam-Douglas/InlineGitBlame</MoreInfo>
     <License>Resources\LICENSE.txt</License>
     <Icon>Resources\Icon.png</Icon>
-    <Tags>Git;Blame;Git Blame;Inline Blame;Annotate;Source Control;Open Source</Tags>
+    <Tags>Inline Git Blame;Open Git Blame;Git Blame;Inline Blame;Blame;Git;Annotate;Source Control;Open Source;MIT</Tags>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.14, )">
